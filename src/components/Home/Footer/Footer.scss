@@ -1,0 +1,25 @@
+@import '../../Shared/Shared.scss';
+.footer_content{
+    background-color: #222222;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    p{
+        color: #999999;
+        font-size: 18px;
+    }
+    h6{
+        font-size: 18px;
+        padding-bottom: 60px;
+        line-height: 37px;
+    }
+}
+.footer_owner_info{
+    text-align: center;
+    border-top: 1px solid #4c4c4c;
+    p{
+        margin-bottom: 0;
+        padding-top: 20px;
+    }
+}

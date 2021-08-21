@@ -1,0 +1,22 @@
+.admin__section{
+    display: flex;
+}
+.left__menubar{
+    background-color: dimgray;
+    height: 100vh;
+    li{
+        list-style: none;
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        padding: 5px;
+    }
+}
+.right__site__content{
+    background-color:rgb(204, 201, 201);
+    height: 100vh;
+}

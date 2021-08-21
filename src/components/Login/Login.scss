@@ -1,0 +1,87 @@
+.create-account{
+    width: 400px;
+    max-height: 550px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid gray;
+}
+.create-account label{
+    font-size: 18px;
+}
+.create-account button{
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: blueviolet;
+    margin-top: 15px;
+    border: none;
+    color: white;
+}
+.already-have-account-text-area{
+    display: flex;
+}
+.show-login-field-button{
+    color: blueviolet;
+    text-decoration: underline;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.login-with-another-field{
+    width: 400px;
+    max-height: 420px;
+    /* padding: 20px; */
+    margin: 20px auto;
+    /* border: 1px solid gray; */
+}
+.or-text{
+    text-align: center;
+}
+
+
+.or-text {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	margin: 8px 0px;
+}
+.or-text::before,
+.or-text::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 8px;
+}
+.login-with-another button{
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding:8px;
+    margin: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 20px;
+}
+.social-icon{
+    margin-right: 100px;
+    // background-color: ;
+}
+.fb-icon{
+    color: rgb(0, 60, 128);
+}
+.gl-icon{
+    color: red;
+}
+.fb-icon, .gl-icon{
+    font-size: 20px;
+}
+.login-button{
+    behavior: unset;
+}
+.success-message{
+    color:green;
+    text-align: center;
+}

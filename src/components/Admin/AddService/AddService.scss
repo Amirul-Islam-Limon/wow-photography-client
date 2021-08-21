@@ -1,0 +1,23 @@
+.services__form{
+    width: 450px;
+    margin: 0 auto;
+        input,textarea{
+            margin: 10px;
+        }
+        textarea{
+            min-height: 150px;
+        }
+        input[type="submit"]{
+            background-color: blueviolet;
+            color: white;
+            border: 0px;
+            padding: 7px 15px;
+        }
+}
+.right__site__content{
+    h1{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
