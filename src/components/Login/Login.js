@@ -24,7 +24,7 @@ const Login = () => {
             var user = userCredential.user;
             const userDetailsInfo={email:data.email, name:data.name, address:data.address, phone:data.phone}
 
-            fetch("http://localhost:9999/addUserInfo",{
+            fetch("https://afternoon-spire-71053.herokuapp.com/addUserInfo",{
                 method:"POST",
                 headers: { 'content-type': 'application/json' },
                 body:JSON.stringify(userDetailsInfo)
@@ -48,7 +48,7 @@ const Login = () => {
             
             var user = userCredential.user;
 
-            fetch(`http://localhost:9999/getUserInfo/${data.email}`)
+            fetch(`https://afternoon-spire-71053.herokuapp.com/getUserInfo/${data.email}`)
             .then(res=>res.json())
             .then(loadData=>{
                 user.phone=loadData.phone

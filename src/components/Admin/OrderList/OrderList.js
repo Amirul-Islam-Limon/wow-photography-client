@@ -7,7 +7,7 @@ const OrderedList = ({list,index}) => {
 
     const onSubmit = data => {
         console.log(data)
-        fetch(`http://localhost:9999/changeStatus/?status=${data.status}&id=${list._id}`,{
+        fetch(`https://afternoon-spire-71053.herokuapp.com/changeStatus/?status=${data.status}&id=${list._id}`,{
             method: 'PUT'
         })
         .then(res=>res.json())
@@ -18,7 +18,7 @@ const OrderedList = ({list,index}) => {
     };
 
     const handleDelete=(id)=>{
-        fetch(`http://localhost:9999/deleteFromOrderedList/${id}`,{
+        fetch(`https://afternoon-spire-71053.herokuapp.com/deleteFromOrderedList/${id}`,{
             method:"DELETE"
         })
     }

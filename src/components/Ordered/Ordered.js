@@ -6,7 +6,7 @@ const Ordered = () => {
     const [userInfo, setUserInfo] = useContext(UserContext)
 
     useEffect(()=>{
-        fetch(`http://localhost:9999/getOrder/${userInfo.email}`)
+        fetch(`https://afternoon-spire-71053.herokuapp.com/getOrder/${userInfo.email}`)
         .then(res=>res.json())
         .then(data=>setOrdered(data))
     },[userInfo])

@@ -17,7 +17,7 @@ const CheckOut = () => {
         data.status="pending"
         console.log(data)
 
-        fetch("http://localhost:9999/addOrder",{
+        fetch("https://afternoon-spire-71053.herokuapp.com/addOrder",{
             method:"POST",
             headers: { 'content-type': 'application/json' },
             body:JSON.stringify(data)
@@ -25,7 +25,7 @@ const CheckOut = () => {
     }
 
     useEffect(()=>{
-        fetch(`http://localhost:9999/serviceDetails/${id}`)
+        fetch(`https://afternoon-spire-71053.herokuapp.com/serviceDetails/${id}`)
         .then(res=>res.json())
         .then(data=>{
             setService(data)

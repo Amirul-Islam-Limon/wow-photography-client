@@ -8,7 +8,7 @@ import OrderedList from '../OrderList/OrderList';
 const Admin = () => {
     const [orderedData, setOrderedData]=useState([])
     useEffect(()=>{
-        fetch("http://localhost:9999/getAllOrder")
+        fetch("https://afternoon-spire-71053.herokuapp.com/getAllOrder")
         .then(res=>res.json())
         .then(data=>setOrderedData(data))
     },[])

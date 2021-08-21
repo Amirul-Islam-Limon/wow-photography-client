@@ -7,7 +7,7 @@ const ServiceDetail = () => {
     let {id}=useParams()
 
     useEffect(()=>{
-        fetch(`http://localhost:9999/serviceDetails/${id}`)
+        fetch(`https://afternoon-spire-71053.herokuapp.com/serviceDetails/${id}`)
         .then(res=>res.json())
         .then(data=>{
             setService(data)
